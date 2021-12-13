@@ -1,0 +1,84 @@
+@import "styles/variables.scss";
+
+button {
+	background-color: unset;
+	border: unset;
+	cursor: pointer;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+
+	&:hover { 
+		transform: scale(1.1);
+	}
+
+	&:focus { 
+		transform: scale(1.1);
+		outline: 1px solid $color-blue;
+	}
+
+	&:active:not(:disabled) {
+		transform: scale(0.9);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		background-color: rgba($color-grey, 0.3);
+		color: rgba($color-light-black, 0.6);
+	}
+
+	.iconWithText {
+		margin-right: 5px;
+	}
+}
+
+.type {
+	&Primary {
+		background-color: $color-red;
+		color: $color-white;
+	}
+
+	&Secondary {
+		background-color: $color-light-grey;
+		color: $color-black;
+	}
+
+	&Ghost {
+		color: $color-black;
+	}
+
+	&Negative {
+		color: $color-light-red;
+		background-color: $color-light-grey;
+	}
+
+	&Inverse {
+		background-color: $color-white;
+	}
+}
+
+.size {
+	&Sm {
+		height: 32px;
+		padding: 8px 16px;
+		font-size: 14px;
+	}
+
+	&Md {
+		height: 44px;
+		padding: 12px 24px;
+		font-size: 17px;
+	}
+
+	&Lg {
+		height: 52px;
+		padding: 16px 32px;
+		font-size: 17px;
+	}
+
+	&Xl {
+		height: 72px;
+		padding: 20px 40px;
+		font-size: 24px;
+	}
+}

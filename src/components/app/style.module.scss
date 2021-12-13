@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+main {
+	.buttons {
+		display: flex;
+		align-items: flex-start;
+		
+		button {
+			margin: 10px;
+		}
+		
+		.greyBackground {
+			padding: 0 10px;
+			background-color: $color-light-grey;
+		}
+	}
+}

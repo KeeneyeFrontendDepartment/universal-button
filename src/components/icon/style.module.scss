@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.iconContainer {		
+	width: 16px;
+	height: 16px;
+}
+
+.deepInheritanceColor {
+	svg path {
+		fill: inherit;
+		stroke: inherit;
+	}
+}
